@@ -23,17 +23,19 @@ button {
     cursor: pointer;
 }
 
+a {
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     height: 20px;
     width: 100%;
     padding-left: 150px;
-    justify-content:end;
-    font-size: 0.8rem;
+    justify-content: end;
 
     position: fixed;
     top: 0;
-    right: 0;
 
     background-color: white;
     box-shadow: 0 0 10px 10px white;
@@ -43,8 +45,10 @@ nav {
 
 nav a {
     position: relative;
-    top: 6px;
+    top: 5px;
     font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 5px;
 }
 
 header {
@@ -158,4 +162,38 @@ h3 {
 
 .skills img {
     width: 100px;
+}
+
+.portfolio img{
+    width: 100%;
+    max-width: 800px;
+}
+
+.info {
+    display: grid;
+}
+
+.info div {
+    max-width: 400px;
+    text-align: center;
+    background-color: var(--colour-dark);
+}
+
+.info p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.info a {
+    display: inline-flex;
+    color: var(--colour-dark);
+    font-size: 1.5rem;
+    background-color: var(--colour-light);
+    padding: 5px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.info a:visited {
+    color: var(--almost-black);
 }
