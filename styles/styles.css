@@ -2,21 +2,20 @@
     box-sizing: border-box;
     margin: auto;
     -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    overflow: visible;
+    font-family: 'Dosis', sans-serif;
     color: var(--almost-black)
 }
 
 :root {
     --almost-black: rgb(50, 50, 50);
-    --colour-light: rgb(236, 243, 245);
-    --colour-dark: rgb(0, 116, 145);
+    --colour-light: rgb(0, 158, 250);
+    --colour-dark: rgb(0, 47, 78);
     --portfolio-img: 1000px;
 }
 
 body {
     height: 100vh;
-    overflow: scroll;
+    overflow: auto;
 }
 
 button {
@@ -26,6 +25,11 @@ button {
 
 a {
     cursor: pointer;
+    z-index: 10000000;
+}
+
+img {
+    z-index: 1000;
 }
 
 h2 {
@@ -41,82 +45,16 @@ h2 {
     text-transform:uppercase;
     font-size: 1.4rem;
     color: inherit;
-    z-index: 200;
+    z-index: 11000;
     font-weight: 1000;
-    color: var(--colour-dark);
-}
-
-nav {
-    display: flex;
-    height: 20px;
-    width: 100%;
-    padding-left: 150px;
-    justify-content: end;
-
-    position: fixed;
-    top: 0;
-
-    background-color: white;
-    box-shadow: 0 0 10px 10px white;
-
-    z-index: 100;
-}
-
-nav a {
-    position: relative;
-    top: 5px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-right: 5px;
-    text-decoration: none;
-}
-
-header {
-    height: 100vh;
-    background-image: url('images/Sky.jpg');
-    background-size: cover; 
-    padding-bottom: 40px;
-}
-
-h1 {
-    width: 100%;
-    padding-right: 5px;
-    text-align: center;
-    font-size: 3rem;
-    color: var(--colour-dark);
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.profile img {
-    aspect-ratio: 1;
-    width: 250px;
-    border-radius: 1000px;
-    border: 10px solid white;
-}
-
-h1 > span {
-    display: block;
-    font-size: 1.5em;
-}
-
-header p {
-    width: 100%;
-    text-align: center;
-    color: var(--colour-dark);
-    font-weight: 800;
+    color: var(--almost-black);
+    font-family: 'Roboto Mono', monospace;
 }
 
 section {
     display: block;
     position: relative;
 }
-
-
 
 .centerFlexColumn {
     height: 100%;
@@ -154,7 +92,7 @@ h3 {
 }
 
 
-#portfolio img{
+#projects img{
     width: 100%;
     max-width: var(--portfolio-img);
 }
@@ -201,27 +139,10 @@ h3 {
     color: black;
     font-size: 1.5rem;
     margin: 20px;
+    z-index: 100000;
 }
 
 .info a:visited {
     color: purple;
-}
-
-@media screen and (min-width: 800px) {
-    .info {
-        grid-template-columns: var(--portfolio-img) 1fr;
-    }
-
-    .reverse {
-        grid-template-columns: 1fr var(--portfolio-img);
-    }
-
-    .reverse img {
-    order: 1;
-    }
-
-    .info div {
-        border-radius: 5px;
-        padding: 20px;
-    }
+    
 }

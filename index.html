@@ -4,54 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Roboto+Mono:wght@100;300;500;700&display=swap');
+    </style>
     <title>Perry Baran</title>
 </head>
 <body>
-    <header id="home">
-        <h2>Home</h2>
-        <div class="centerFlexColumn">
-            <div class="profile">
-                <img src="images/Profile.jpg" alt="Perry Baran"/>
-            </div>
-            <h1>Hi, my name is <span>Perry</span></h1>
-            <p>Front-End Web Developer</p>
-            <address>
-                <p>Contact me at: <a href ="mailto:perrybaran@gmail.com">perrybaran@gmail.com</a></p>
-            </address>
-        </div>
-    </header>
     <nav>
         <a href="#home">Home</a>
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#projects">Projects</a>
     </nav>
+    <header id="home">
+        <h2>Home</h2>
+        <div class="gridHeading">
+            <div class="centerFlex">
+                <h1>PERRY<span>BARAN</span></h1>
+            </div>
+            <div>
+                <p>Front-End Web Developer</p>
+                <p>Contact me at: <a href ="mailto:perrybaran@gmail.com">perrybaran@gmail.com</a></p>
+            </div>
+        </div>
+    </header>
     <main>
         <section id="skills">
             <h2>Skills</h2>
             <section>
                 <h3>Main Skills</h3>
                 <div class="iconContainer">
-                    <img src="images/JS.png" alt="JS logo"/>
-                    <img src="images/React.png" alt="React logo"/>
+                    <img src="media/images/JS.png" alt="JS logo"/>
+                    <img src="media/images/React.png" alt="React logo"/>
                 </div>
             </section>
             <section>
                 <h3>Other Skills</h3>
                 <div class="iconContainer">
-                    <img src="images/HTML5.png" alt="HTML5 logo"/>
-                    <img src="images/CSS3.png" alt="CSS3 logo"/>
-                    <img src="images/Typescript.png" alt="Typescript logo"/>
-                    <img src="images/Github.png" alt="Github logo"/>
-                    <img src="images/Firebase.png" alt="Firebase Logo"/>
+                    <img src="media/images/HTML5.png" alt="HTML5 logo"/>
+                    <img src="media/images/CSS3.png" alt="CSS3 logo"/>
+                    <img src="media/images/Typescript.png" alt="Typescript logo"/>
+                    <img src="media/images/Github.png" alt="Github logo"/>
+                    <img src="media/images/Firebase.png" alt="Firebase Logo"/>
                 </div>
             </section>
         </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
+        <section id="projects">
+            <h2>Projects</h2>
             <section class="project">
                 <div class="info">
-                    <img src="images/DoDL.jpg" alt="Music player page"/>
+                    <img src="media/images/DoDL.jpg" alt="Music player page"/>
                     <div>
                         <h3>Music Player</h3>
                         <p>Plays the album Dreaming of Detuned Love by Jenico. Created in React. Uses firebase for storage of music and video elements. Unit tests done in Jest.</p>
@@ -62,7 +67,7 @@
             </section>
             <section class="project">
                 <div class="info reverse">
-                    <img src="images/Weather App.jpg" alt="Weather App page"/>
+                    <img src="media/images/Weather App.jpg" alt="Weather App page"/>
                     <div>
                         <h3>Weather App</h3>
                         <p>Weather app created in Javascript. Made with a mobile first approach. Gets weather data from OpenWeatherMap's Weather API.</p>
@@ -73,7 +78,7 @@
             </section>
             <section class="project">
                 <div class="info">
-                    <img src="images/Online Store.jpg" alt="Online store item page"/>
+                    <img src="media/images/Online Store.jpg" alt="Online store item page"/>
                     <div>
                         <h3>Online Store</h3>
                         <p>UI for a videogame key seller store. Created in React, uses React BrowserRouter.</p>
