@@ -20,3 +20,8 @@
 #about a {
     text-decoration: none;
 }
+
+#about {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

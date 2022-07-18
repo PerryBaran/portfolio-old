@@ -5,7 +5,7 @@ img[alt$="page"]{
 
 .info {
     display: grid;
-    background-color: var(--colour-light);
+    background-color: white;
 }
 
 .info div {
@@ -14,12 +14,12 @@ img[alt$="page"]{
 }
 
 .info h3 {
-    color: white;
+    color: var(--colour-light);
     font-size: 3rem;
 }
 
 .info p {
-    color: white;
+    color: var(--colour-light);
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -38,18 +38,20 @@ img[alt$="page"]{
     color: purple;
 }
 
+
 .projectsSkills {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .projectsSkills img {
     height: 75px;
+    z-index: 5000;
 }
 
 .projectsSkills > h4 {
     margin-bottom: 5px;
 
-    color: white;
+    color: var(--colour-light);
 
     font-family: 'Roboto Mono', monospace;
     font-size: 1.5rem;
@@ -66,22 +68,22 @@ img[alt$="page"]{
 .projectsSkills li {
     all: unset;
     height: fit-content;
+    z-index: 200;
 }
 
 .reverse {
-    background-color: white;
+    background-color: var(--colour-light)
 }
 
-.reverse p {
-    color: var(--colour-light);
+.reverse p, h3 {
+    color: white;
 }
-
 .reverse h3 {
-    color: var(--colour-light);
+    color: white;
 }
 
 .reverse .projectsSkills > h4 {
-    color: var(--colour-light);
+    color: white;
 }
 
 @media screen and (min-width: 1200px) {
