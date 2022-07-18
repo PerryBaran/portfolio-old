@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/about.css">
+    <link rel="stylesheet" type="text/css" href="styles/skills.css">
+    <link rel="stylesheet" type="text/css" href="styles/projects.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Roboto+Mono:wght@100;300;500;700&display=swap');
     </style>
@@ -32,23 +35,59 @@
         </div>
     </header>
     <main>
+        <section id="about">
+            <h2>About</h2>
+            <div>
+                <p>Hi, I'm Perry, a font-end web develop based in Leeds. I started coding in 2021, following the Oden Project (a free online course), and quickly fell in 
+                    love with it. Currently, I am a studying full-stack web development at Manchester Codes, with the aim of taking my hobby for coding into a career.
+                    When I'm not coding, you can find me playing Elden Ring, making <a href="https://perrybaran.github.io/Jenico/" target="_blank">electronic music</a> or out bouldering.
+                </p>
+                <img src="media/images/Profile.jpg" alt="Perry Baran profile"/>
+            </div>
+        </section>
         <section id="skills">
             <h2>Skills</h2>
             <section>
                 <h3>Main Skills</h3>
                 <div class="iconContainer">
-                    <img src="media/images/JS.png" alt="JS logo"/>
-                    <img src="media/images/React.png" alt="React logo"/>
+                    <figure>
+                        <img src="media/images/JS.png" alt="Javascript logo"/>
+                        <figcaption>Javascript</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="media/images/React.png" alt="React logo"/>
+                        <figcaption>React</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="media/images/CSS3.png" alt="CSS3 logo"/>
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+                    
                 </div>
             </section>
             <section>
                 <h3>Other Skills</h3>
                 <div class="iconContainer">
-                    <img src="media/images/HTML5.png" alt="HTML5 logo"/>
-                    <img src="media/images/CSS3.png" alt="CSS3 logo"/>
-                    <img src="media/images/Typescript.png" alt="Typescript logo"/>
-                    <img src="media/images/Github.png" alt="Github logo"/>
-                    <img src="media/images/Firebase.png" alt="Firebase Logo"/>
+                    <figure>
+                        <img src="media/images/HTML5.png" alt="HTML5 logo"/>
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="media/images/Typescript.png" alt="Typescript logo"/>
+                        <figcaption>Typescript</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="media/images/Jest.png" alt="Jest logo"/>
+                        <figcaption>Jest</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="media/images/Github.png" alt="Github logo"/>
+                        <figcaption>Github</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="media/images/Firebase.png" alt="Firebase Logo"/>
+                        <figcaption>Firebase</figcaption>
+                    </figure>
                 </div>
             </section>
         </section>
@@ -56,10 +95,18 @@
             <h2>Projects</h2>
             <section class="project">
                 <div class="info">
-                    <img src="media/images/DoDL.jpg" alt="Music player page"/>
+                    <img src="media/images/Jenico.jpg" alt="Music player page"/>
                     <div>
-                        <h3>Music Player</h3>
-                        <p>Plays the album Dreaming of Detuned Love by Jenico. Created in React. Uses firebase for storage of music and video elements. Unit tests done in Jest.</p>
+                        <h3>Musician's Personal Website</h3>
+                        <p>Personal website for electronic music producer Jenico, with built in music player.</p>
+                        <section class="projectsSkills">
+                            <h4>Skills used</h4>
+                            <ul>
+                                <li><img src="media/images/React.png" alt="React"/></li>
+                                <li><img src="media/images/Typescript.png" alt="Typescript"/></li>
+                                <li><img src="media/images/CSS3.png" alt="CSS3"/></li>
+                            </ul>
+                        </section>
                         <a href="https://github.com/PerryBaran/dodl" target="_blank">Repository</a>
                         <a href="https://perrybaran.github.io/dodl/" target="_blank">Live Preview</a>
                     </div>
@@ -70,7 +117,15 @@
                     <img src="media/images/Weather App.jpg" alt="Weather App page"/>
                     <div>
                         <h3>Weather App</h3>
-                        <p>Weather app created in Javascript. Made with a mobile first approach. Gets weather data from OpenWeatherMap's Weather API.</p>
+                        <p>Weather app created in Javascript. Gets weather data from OpenWeatherMap's Weather API.</p>
+                        <section class="projectsSkills">
+                            <h4>Skills used</h4>
+                            <ul>
+                                <li><img src="media/images/JS.png" alt="Javascript"/></li>
+                                <li><img src="media/images/HTML5.png" alt="HTML5"/></li>
+                                <li><img src="media/images/CSS3.png" alt="CSS3"/></li>
+                            </ul>
+                        </section>
                         <a href="https://github.com/PerryBaran/weatherapp" target="_blank">Repository</a>
                         <a href="https://perrybaran.github.io/weatherapp/" target="_blank">Live Preview</a>
                     </div>
@@ -78,10 +133,18 @@
             </section>
             <section class="project">
                 <div class="info">
-                    <img src="media/images/Online Store.jpg" alt="Online store item page"/>
+                    <img src="media/images/DoDL.jpg" alt="Music Player page"/>
                     <div>
-                        <h3>Online Store</h3>
-                        <p>UI for a videogame key seller store. Created in React, uses React BrowserRouter.</p>
+                        <h3>Music Player</h3>
+                        <p>Music and videoplayer for the album Dreaming of Detuned Love by Jenico.</p>
+                        <section class="projectsSkills">
+                            <h4>Skills used</h4>
+                            <ul>
+                                <li><img src="media/images/React.png" alt="React"/></li>
+                                <li><img src="media/images/Jest.png" alt="Jest"/></li>
+                                <li><img src="media/images/Firebase.png" alt="Firebase"/></li>
+                            </ul>
+                        </section>
                         <a href="https://github.com/PerryBaran/shopping-cart" target="_blank">Repository</a>
                         <a href="https://perrybaran.github.io/shopping-cart/#/" target="_blank">Live Preview</a>
                     </div>

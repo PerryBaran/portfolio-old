@@ -1,0 +1,22 @@
+#about img{
+    aspect-ratio: 1;
+    height: 400px;
+    border-radius: 100%;
+}
+
+#about > div {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#about p {
+    width: 100%;
+    max-width: 800px;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#about a {
+    text-decoration: none;
+}

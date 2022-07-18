@@ -1,0 +1,40 @@
+.iconContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+}
+
+#skills a {
+    z-index: -10;
+}
+
+#skills section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+figure {
+    height: 170px;
+    width: 120px;
+    display: grid;
+    grid-template-rows: 1fr 20px;
+}
+
+figure img {
+    height: 100px; 
+    transition-duration: 300ms;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+figure img:hover {
+    height: 120px;
+}

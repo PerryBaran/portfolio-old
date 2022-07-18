@@ -10,7 +10,7 @@
     --almost-black: rgb(50, 50, 50);
     --colour-light: rgb(0, 158, 250);
     --colour-dark: rgb(0, 47, 78);
-    --portfolio-img: 1000px;
+    --portfolio-img: 800px;
 }
 
 body {
@@ -25,124 +25,36 @@ button {
 
 a {
     cursor: pointer;
-    z-index: 10000000;
-}
-
-img {
-    z-index: 1000;
 }
 
 h2 {
     display:inline-block;
+
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
     left: 0px;
+
     height: 30px;
-    width: fit-content;
+    
     padding-top: 2px;
     padding-left: 5px;
-    text-transform:uppercase;
+
+
+    font-family: 'Roboto Mono', monospace;
     font-size: 1.4rem;
-    color: inherit;
-    z-index: 11000;
     font-weight: 1000;
-    color: var(--almost-black);
+    text-transform:uppercase;
+
+    z-index: 11000;
+}
+
+h3 {
+    margin: 10px;
     font-family: 'Roboto Mono', monospace;
 }
 
 section {
     display: block;
     position: relative;
-}
-
-.centerFlexColumn {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.iconContainer {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    width: 100%;
-    max-width: 800px;
-}
-
-h3 {
-    margin: 10px;
-}
-
-
-#skills img {
-    width: 100px;
-}
-
-#skills section {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-
-#projects img{
-    width: 100%;
-    max-width: var(--portfolio-img);
-}
-
-.info {
-    display: grid;
-    height: auto;
-}
-
-.info {
-    background-color: var(--colour-dark);
-}
-
-.info div {
-    max-width: 600px;
-    text-align: center;
-}
-
-.info p {
-    font-size: 1.2rem;
-    color: white;
-}
-
-.info h3 {
-    font-size: 3rem;
-    color: white;
-}
-
-.reverse {
-    background-color: white;
-}
-
-.reverse p {
-    color: var(--colour-dark);
-}
-
-.reverse h3 {
-    color: var(--colour-dark);
-}
-
-
-.info a {
-    display: inline-flex;
-    color: black;
-    font-size: 1.5rem;
-    margin: 20px;
-    z-index: 100000;
-}
-
-.info a:visited {
-    color: purple;
-    
 }
