@@ -195,7 +195,7 @@ header p > a {
 /*About*/
 #about img{
     aspect-ratio: 1;
-    height: 400px;
+    height: 380px;
     border-radius: 100%;
 }
 
@@ -326,21 +326,13 @@ img[alt$="page"]{
     z-index: 5000;
 }
 
-.projectsSkills > h4 {
-    margin-bottom: 5px;
-
-    color: var(--colour-light);
-
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.projectsSkills ul {
+.projectsSkills {
     all:unset;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    margin-top: 40px;
 }
 
 .projectsSkills li {
@@ -353,25 +345,8 @@ img[alt$="page"]{
     background-color: var(--colour-light)
 }
 
-#projects .project:nth-of-type(2n) p, #projects .project:nth-of-type(2n) h3, #projects .project:nth-of-type(2n) h4 {
+#projects .project:nth-of-type(2n) p, #projects .project:nth-of-type(2n) h3 {
     color: white;
-}
-
-/*animation slows down website a lot*/
-.animation {
-    animation: hue 120s;
-    animation-iteration-count: infinite;
-    pointer-events: none;
-}
-
-@keyframes hue {
-    from {
-        backdrop-filter: hue-rotate(0deg);
-    }
-
-    to {
-        backdrop-filter: hue-rotate(360deg);
-    }
 }
 
 @media (orientation: portrait) {
