@@ -223,8 +223,8 @@ header p > a {
 
 /*Skills*/
 #skills {
-    background-color: var(--colour-light);
     padding-bottom: 20px;
+    background-color: var(--colour-light);
 }
 
 #skills a {
@@ -234,10 +234,6 @@ header p > a {
 #skills section {
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-#skills h3 {
-    color: white;
 }
 
 figure {
@@ -254,8 +250,7 @@ figure img {
 
 figcaption {
     color: white;
-
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
 }
@@ -267,11 +262,11 @@ figure img:hover {
 .iconContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 20px;
     
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     height: 100%;
 }
 
@@ -293,11 +288,14 @@ img[alt$="page"]{
 
 .info h3 {
     color: var(--colour-light);
-    font-size: 3rem;
+    font-size: 3.3rem;
 }
 
 .info p {
-    color: var(--colour-light);
+    margin-left: 10px;
+    margin-right: 10px;
+
+    color: rgb(99, 99, 99);
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -306,14 +304,25 @@ img[alt$="page"]{
     display: inline-flex;
 
     margin: 20px;
+    padding: 5px;
+    border: 2px solid var(--colour-dark);
+    border-radius: 5px;
 
-    color: black;
+    color: var(--colour-dark);
 
     font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .info a:visited {
     color: purple;
+    border: 2px solid purple;
+}
+
+.info a:hover {
+    color: white;
+    background-color: var(--colour-dark);
 }
 
 
