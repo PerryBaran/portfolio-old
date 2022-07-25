@@ -224,7 +224,6 @@ header p > a {
 /*Skills*/
 #skills {
     padding-bottom: 20px;
-    background-color: var(--colour-light);
 }
 
 #skills a {
@@ -249,9 +248,7 @@ figure img {
 }
 
 figcaption {
-    color: white;
     font-size: 1.1rem;
-    font-weight: bold;
     text-align: center;
 }
 
