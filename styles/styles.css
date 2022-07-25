@@ -11,6 +11,7 @@
     --colour-light: rgb(0, 158, 250);
     --colour-dark: rgb(0, 47, 78);
     --portfolio-img: 800px;
+    --scroll-bar-width: 15px
 }
 
 body {
@@ -78,7 +79,7 @@ section {
 
 /*Scroll bar*/
 ::-webkit-scrollbar {
-    width: 15px;
+    width: var(--scroll-bar-width);
 }
 
 ::-webkit-scrollbar-track {
@@ -99,7 +100,7 @@ nav {
     position: fixed;
     top: 0;
     
-    width: 100%;
+    width: calc(100% - var(--scroll-bar-width));
     height: 35px;
     padding-left: 40%;
     
